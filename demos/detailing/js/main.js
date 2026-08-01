@@ -27,21 +27,6 @@ const observer = new IntersectionObserver(
 );
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 
-/* ---------- слайдер до/после ---------- */
-const ba = document.getElementById("ba");
-const baRange = document.getElementById("ba-range");
-
-/* фон половины «до» держим шириной всего блока, иначе фото сжимается */
-function syncBaWidth() {
-  ba.style.setProperty("--ba-w", ba.clientWidth + "px");
-}
-syncBaWidth();
-window.addEventListener("resize", syncBaWidth);
-
-baRange.addEventListener("input", () => {
-  ba.style.setProperty("--pos", baRange.value + "%");
-});
-
 /* ---------- форма заявки ---------- */
 const form = document.getElementById("lead-form");
 const statusEl = document.getElementById("form-status");

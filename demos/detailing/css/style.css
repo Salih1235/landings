@@ -164,105 +164,36 @@ h3 { font-size: 1.05rem; font-weight: 700; line-height: 1.3; }
 }
 .stat__label { font-size: 0.85rem; color: var(--ink-soft); }
 
-/* ---------- до/после ---------- */
-.ba {
-  position: relative;
-  aspect-ratio: 16 / 8;
+/* ---------- галерея работ ---------- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-top: 44px;
+}
+.shot {
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
   border-radius: var(--radius);
   overflow: hidden;
-  border: 1px solid var(--line);
-  user-select: none;
 }
-/* плейсхолдеры: заменить на реальные фото (before/after) */
-.ba__after,
-.ba__before {
-  position: absolute;
-  inset: 0;
-}
-/* Одно фото на обе половины: справа как есть (отполировано),
-   слева то же фото приглушено фильтром + «паутинка» поверх.
-   На боевом проекте — два реальных снимка клиента до и после. */
-.ba__after,
-.ba__before::after {
-  background-image: url("../img/car.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.ba__before {
-  /* ширина управляется из JS через --pos */
-  width: var(--pos, 50%);
-  overflow: hidden;
-  border-right: 2px solid var(--accent);
-}
-/* «до»: фон фиксированной ширины, чтобы фото не сжималось при движении ползунка */
-.ba__before::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  width: var(--ba-w, 100vw);
-  filter: saturate(0.45) brightness(0.72) contrast(0.82);
-}
-/* риски от моек поверх матовой половины */
-.ba__before::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background:
-    repeating-linear-gradient(58deg, rgba(255,255,255,.06) 0 1px, transparent 1px 6px),
-    repeating-linear-gradient(-58deg, rgba(255,255,255,.05) 0 1px, transparent 1px 8px);
-}
-.ba__tag { z-index: 2; }
-.ba__tag {
-  position: absolute;
-  top: 18px;
-  left: 18px;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  padding: 5px 12px;
-  border-radius: 99px;
-  background: rgba(0, 0, 0, 0.45);
-  color: #D9CDB8;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-}
-.ba__tag--after { left: auto; right: 18px; color: var(--accent); }
-.ba__handle {
-  position: absolute;
-  top: 50%;
-  left: var(--pos, 50%);
-  transform: translate(-50%, -50%);
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: var(--accent);
-  display: grid;
-  place-items: center;
-  pointer-events: none;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
-}
-.ba__handle::before {
-  content: "◂ ▸";
-  font-size: 0.8rem;
-  color: #14100A;
-  letter-spacing: 0.05em;
-}
-.ba input[type="range"] {
-  position: absolute;
-  inset: 0;
+.shot img {
   width: 100%;
-  height: 100%;
-  opacity: 0;
-  cursor: ew-resize;
-  appearance: none;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display: block;
 }
-.ba__caption {
-  margin-top: 16px;
-  font-size: 0.9rem;
-  color: var(--ink-soft);
+.shot figcaption {
+  padding: 20px 24px 22px;
+  display: grid;
+  gap: 5px;
+}
+.shot figcaption b { font-size: 1.02rem; }
+.shot figcaption span {
   font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink-soft);
 }
 
 /* ---------- услуги ---------- */
@@ -455,7 +386,7 @@ h3 { font-size: 1.05rem; font-weight: 700; line-height: 1.3; }
   .burger { display: flex; }
   .header__actions .btn { display: none; }
   .hero__stats { grid-template-columns: repeat(2, 1fr); gap: 20px 16px; }
-  .ba { aspect-ratio: 4 / 3; }
+  .gallery { grid-template-columns: 1fr; max-width: 560px; margin-inline: auto; }
   .step { padding-left: 56px; }
   .step::before { font-size: 1.1rem; top: 28px; }
 }

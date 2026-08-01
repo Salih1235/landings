@@ -10,7 +10,10 @@ Mark). Найдены через агрегатор Openverse.
 | `remont/img/case-2.jpg` | Public Domain Mark | Flickr — Modern loft / apartment |
 | `remont/img/case-3.jpg` | Public Domain Mark | Flickr — Modern living room interior |
 | `remont/img/case-4.jpg` | Public Domain Mark | Flickr — Bathroom in luxury home |
-| `detailing/img/car.jpg` | CC0 | Flickr — green sports car |
+| `detailing/img/work-1.jpg` | Public Domain Mark | Flickr — Mercedes S-класс |
+| `detailing/img/work-2.jpg` | CC0 | StockSnap — Auto Headlight |
+| `detailing/img/work-3.jpg` | CC0 | Flickr — green sports car |
+| `detailing/img/work-4.jpg` | CC0 | StockSnap — Wheels Rims |
 
 ## Важно для клиентских проектов
 
