@@ -179,10 +179,16 @@ h3 { font-size: 1.05rem; font-weight: 700; line-height: 1.3; }
   position: absolute;
   inset: 0;
 }
+/* Плейсхолдеры вместо фото: слева матовый лак с «паутинкой»,
+   справа отполированный глянец с отражением. На боевом проекте
+   заменить на реальные снимки клиента (background-image). */
 .ba__after {
   background:
-    radial-gradient(600px 300px at 70% 20%, rgba(255, 255, 255, 0.22), transparent 55%),
-    linear-gradient(115deg, #2A3644 0%, #10151C 55%, #253243 100%);
+    /* резкий блик — признак ровного глянца */
+    linear-gradient(104deg, transparent 34%, rgba(255,255,255,.30) 40%, rgba(255,255,255,.62) 43%, rgba(255,255,255,.30) 46%, transparent 52%),
+    /* отражение неба */
+    radial-gradient(700px 320px at 72% 12%, rgba(150,190,235,.34), transparent 60%),
+    linear-gradient(160deg, #22344A 0%, #0C1219 62%, #16222F 100%);
 }
 .ba__before {
   /* ширина управляется из JS через --pos */
@@ -190,8 +196,12 @@ h3 { font-size: 1.05rem; font-weight: 700; line-height: 1.3; }
   overflow: hidden;
   border-right: 2px solid var(--accent);
   background:
-    radial-gradient(500px 260px at 30% 30%, rgba(120, 110, 95, 0.25), transparent 60%),
-    linear-gradient(115deg, #4A453C 0%, #2E2B25 55%, #3E3A32 100%);
+    /* паутинка от моек — множество мелких рисок */
+    repeating-linear-gradient(58deg, rgba(255,255,255,.055) 0 1px, transparent 1px 7px),
+    repeating-linear-gradient(-58deg, rgba(255,255,255,.045) 0 1px, transparent 1px 9px),
+    /* мутный, рассеянный блик вместо резкого */
+    radial-gradient(620px 300px at 34% 26%, rgba(190,185,170,.20), transparent 62%),
+    linear-gradient(160deg, #46433C 0%, #2A2823 62%, #38352E 100%);
 }
 .ba__tag {
   position: absolute;
