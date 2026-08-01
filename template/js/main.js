@@ -124,7 +124,7 @@ form.addEventListener("submit", async (e) => {
     statusEl.textContent = "Заявка отправлена! Перезвоним в течение часа в рабочее время.";
     statusEl.classList.add("is-ok");
   } catch {
-    statusEl.textContent = "Не получилось отправить. Позвоните нам: +7 999 000-11-22";
+    statusEl.textContent = "Не получилось отправить. Напишите нам в WhatsApp или Telegram.";
     statusEl.classList.add("is-err");
   } finally {
     btn.disabled = false;

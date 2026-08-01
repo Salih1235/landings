@@ -80,7 +80,7 @@ form.addEventListener("submit", async (e) => {
     statusEl.textContent = "Записали! Перезвоним, чтобы подтвердить время.";
     statusEl.classList.add("is-ok");
   } catch {
-    statusEl.textContent = "Не получилось отправить. Позвоните: +7 999 000-22-33";
+    statusEl.textContent = "Не получилось отправить. Напишите нам в WhatsApp или Telegram.";
     statusEl.classList.add("is-err");
   } finally {
     btn.disabled = false;

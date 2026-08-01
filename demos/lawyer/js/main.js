@@ -74,7 +74,7 @@ form.addEventListener("submit", async (e) => {
     statusEl.textContent = "Заявка получена! Перезвоню, чтобы согласовать время консультации.";
     statusEl.classList.add("is-ok");
   } catch {
-    statusEl.textContent = "Не получилось отправить. Позвоните: +7 999 000-33-44";
+    statusEl.textContent = "Не получилось отправить. Напишите нам в WhatsApp или Telegram.";
     statusEl.classList.add("is-err");
   } finally {
     btn.disabled = false;
