@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Чисто.Дом — уборка квартир: генеральная, после ремонта</title>
+  <meta name="description" content="Уборка квартир по чек-листу из 68 пунктов: поддерживающая, генеральная, после ремонта. Свои клинеры, эко-химия, страховка. Расчёт цены онлайн за минуту.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23189A94'/><text x='50' y='70' font-size='52' text-anchor='middle' font-family='Arial' font-weight='bold' fill='white'>Ч</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#" class="logo"><span class="logo__mark">Ч</span>Чисто<em>.Дом</em></a>
+    <nav class="nav" id="nav">
+      <a href="#types">Что входит</a>
+      <a href="#calc">Калькулятор</a>
+      <a href="#why">Почему мы</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <div class="header__actions">
+      <a href="tel:+79990004455" class="header__phone">+7 999 000-44-55</a>
+      <a href="#calc" class="btn btn--small">Рассчитать</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ХИРО -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content reveal">
+        <p class="eyebrow">Клининг квартир и домов</p>
+        <h1>Уборка по&nbsp;чек-листу из&nbsp;68&nbsp;пунктов — примете работу за&nbsp;10&nbsp;минут</h1>
+        <p class="hero__sub">Свои клинеры в форме, эко-химия, безопасная для детей и животных, и страховка на 100 000 ₽. Цену считаем честно — по метрам, без «сюрпризов» на месте.</p>
+        <div class="hero__cta">
+          <a href="#calc" class="btn">Рассчитать за минуту</a>
+          <a href="#types" class="btn btn--ghost">Что входит в уборку</a>
+        </div>
+        <ul class="hero__badges">
+          <li>4,9 из 5 — средняя оценка</li>
+          <li>3 200+ уборок</li>
+          <li>Приедем уже завтра</li>
+        </ul>
+      </div>
+      <div class="hero__bubble reveal" aria-hidden="true">
+        <div class="bubble bubble--1"></div>
+        <div class="bubble bubble--2"></div>
+        <div class="bubble bubble--3"></div>
+        <div class="hero__card">
+          <p class="hero__card-title">Сегодня убрали</p>
+          <p class="hero__card-num">14 квартир</p>
+          <p class="hero__card-note">ближайшее окно — завтра 10:00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ТАБЫ ЧТО ВХОДИТ -->
+  <section class="section section--tint" id="types">
+    <div class="container">
+      <p class="eyebrow reveal">Три формата</p>
+      <h2 class="reveal">Что входит в&nbsp;уборку</h2>
+      <div class="tabs reveal">
+        <div class="tabs__nav" role="tablist" aria-label="Типы уборки">
+          <button class="tabs__btn is-active" role="tab" aria-selected="true" data-tab="0">Поддерживающая</button>
+          <button class="tabs__btn" role="tab" aria-selected="false" data-tab="1">Генеральная</button>
+          <button class="tabs__btn" role="tab" aria-selected="false" data-tab="2">После ремонта</button>
+        </div>
+
+        <div class="tabs__panel is-active" role="tabpanel" data-panel="0">
+          <div class="tabs__head">
+            <p class="tabs__price">от 100 ₽/м² <span>· минимум 3 000 ₽ · 2–3 часа</span></p>
+            <p class="tabs__desc">Регулярный порядок раз в неделю-две: всё протёрто, вымыто и разложено.</p>
+          </div>
+          <ul class="checklist">
+            <li>Пыль со всех открытых поверхностей</li>
+            <li>Полы: пылесос и влажная уборка</li>
+            <li>Кухня: фасады, плита, раковина, столешница</li>
+            <li>Санузел: сантехника, зеркала, полы</li>
+            <li>Вынос мусора, замена пакетов</li>
+            <li>Заправка кроватей, раскладка вещей</li>
+            <li>Зеркала и стеклянные поверхности</li>
+            <li>Дверные ручки и выключатели</li>
+          </ul>
+        </div>
+
+        <div class="tabs__panel" role="tabpanel" data-panel="1" hidden>
+          <div class="tabs__head">
+            <p class="tabs__price">от 180 ₽/м² <span>· минимум 5 500 ₽ · 4–6 часов</span></p>
+            <p class="tabs__desc">Глубокая уборка каждого угла — как перед приездом самой строгой бабушки.</p>
+          </div>
+          <ul class="checklist">
+            <li>Всё из поддерживающей — плюс:</li>
+            <li>Кухня изнутри: шкафы, духовка, холодильник</li>
+            <li>Вытяжка и плитка фартука от жира</li>
+            <li>Санузел: швы, известковый налёт, экран ванны</li>
+            <li>Мебель: под, за и внутри</li>
+            <li>Плинтусы, карнизы, люстры, радиаторы</li>
+            <li>Двери и косяки целиком</li>
+            <li>Мытьё окон и балконной двери</li>
+          </ul>
+        </div>
+
+        <div class="tabs__panel" role="tabpanel" data-panel="2" hidden>
+          <div class="tabs__head">
+            <p class="tabs__price">от 250 ₽/м² <span>· минимум 7 500 ₽ · 5–8 часов</span></p>
+            <p class="tabs__desc">Строительная пыль не исчезает сама — вывозим её со всех поверхностей, включая скрытые.</p>
+          </div>
+          <ul class="checklist">
+            <li>Сухая и влажная уборка строительной пыли</li>
+            <li>Удаление следов краски, клея, герметика</li>
+            <li>Окна, рамы и подоконники от плёнки и пыли</li>
+            <li>Мытьё стен и потолков (где допустимо)</li>
+            <li>Полы: финишная мойка с полиролью</li>
+            <li>Санузел: отмывка после мастеров</li>
+            <li>Вынос лёгкого строительного мусора</li>
+            <li>Проветривание и финальный обход с чек-листом</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- КАЛЬКУЛЯТОР -->
+  <section class="section" id="calc">
+    <div class="container">
+      <p class="eyebrow reveal">Честный расчёт</p>
+      <h2 class="reveal">Сколько будет стоить</h2>
+      <div class="calc reveal">
+        <div class="calc__controls">
+          <div class="calc__field">
+            <label for="calc-area">Площадь квартиры</label>
+            <div class="calc__range-row">
+              <input type="range" id="calc-area" min="20" max="150" value="50" step="1">
+              <output for="calc-area" id="calc-area-out">50 м²</output>
+            </div>
+          </div>
+          <fieldset class="calc__field">
+            <legend>Тип уборки</legend>
+            <div class="calc__radios" role="radiogroup">
+              <label class="chip"><input type="radio" name="calc-type" value="100" data-min="3000" checked><span>Поддерживающая</span></label>
+              <label class="chip"><input type="radio" name="calc-type" value="180" data-min="5500"><span>Генеральная</span></label>
+              <label class="chip"><input type="radio" name="calc-type" value="250" data-min="7500"><span>После ремонта</span></label>
+            </div>
+          </fieldset>
+          <label class="calc__check">
+            <input type="checkbox" id="calc-windows">
+            <span>Мытьё окон (+ 1 500 ₽)</span>
+          </label>
+        </div>
+        <div class="calc__result">
+          <p class="calc__result-label">Стоимость уборки</p>
+          <p class="calc__result-num" id="calc-total">5 000 ₽</p>
+          <p class="calc__result-note">Это финальная цена — клинер не будет «допродавать» на месте. Если что-то не понравится, переделаем бесплатно в течение 24 часов.</p>
+          <a href="#lead" class="btn" id="calc-cta">Заказать уборку</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПОЧЕМУ МЫ -->
+  <section class="section section--tint" id="why">
+    <div class="container">
+      <p class="eyebrow reveal">Почему нас советуют</p>
+      <h2 class="reveal">Четыре причины</h2>
+      <div class="feats">
+        <article class="feat reveal">
+          <span class="feat__icon">👥</span>
+          <h3>Свои клинеры, не аутсорс</h3>
+          <p>В штате, с медкнижками и обучением. К постоянным клиентам приезжает один и тот же человек.</p>
+        </article>
+        <article class="feat reveal">
+          <span class="feat__icon">🌿</span>
+          <h3>Эко-химия</h3>
+          <p>Средства с европейскими экосертификатами — безопасно для детей, животных и аллергиков.</p>
+        </article>
+        <article class="feat reveal">
+          <span class="feat__icon">🛡</span>
+          <h3>Страховка 100 000 ₽</h3>
+          <p>Имущество застраховано. Что-то случилось — возмещаем без споров и ожиданий.</p>
+        </article>
+        <article class="feat reveal">
+          <span class="feat__icon">✅</span>
+          <h3>Приёмка по чек-листу</h3>
+          <p>В конце проходите по квартире с чек-листом. Пункт не выполнен — доделываем сразу.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ОТЗЫВЫ -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <p class="eyebrow reveal">Отзывы</p>
+      <h2 class="reveal">Что говорят клиенты</h2>
+      <div class="reviews">
+        <blockquote class="review reveal">
+          <p>«После ремонта думали, что от пыли не избавимся никогда. Две девушки за 6 часов отмыли всё, включая окна от плёнки. Дышится — как в новой квартире».</p>
+          <footer><b>Марина</b> · двушка 58 м², после ремонта</footer>
+        </blockquote>
+        <blockquote class="review reveal">
+          <p>«Заказываю поддерживающую раз в две недели уже полгода. Приезжает всегда Алина, знает, где что лежит. Кот её обожает, а это высшая форма доверия».</p>
+          <footer><b>Ксения</b> · однушка 42 м², регулярно</footer>
+        </blockquote>
+        <blockquote class="review reveal">
+          <p>«Генеральная перед продажей квартиры. Риелтор спросил, делали ли мы ремонт — настолько изменилась картинка. Продали с первого показа».</p>
+          <footer><b>Андрей</b> · трёшка 74 м², генеральная</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--tint" id="faq">
+    <div class="container container--narrow">
+      <p class="eyebrow reveal">Частые вопросы</p>
+      <h2 class="reveal">Спрашивают перед заказом</h2>
+      <div class="faq reveal">
+        <details>
+          <summary>Нужно ли что-то готовить к приезду клинера?</summary>
+          <p>Нет. Весь инвентарь и средства привозим с собой. Единственная просьба — убрать ценные и хрупкие вещи, которые не хотите доверять чужим рукам.</p>
+        </details>
+        <details>
+          <summary>Можно ли не присутствовать во время уборки?</summary>
+          <p>Да, так делает половина клиентов. Передаёте ключи удобным способом, после уборки присылаем фотоотчёт. Клинеры застрахованы, в квартире работает трекинг задач по чек-листу.</p>
+        </details>
+        <details>
+          <summary>Что, если качество не устроит?</summary>
+          <p>Сообщите в течение 24 часов — приедем и бесплатно переделаем пункты, к которым есть вопросы. Такое случается реже, чем в 2% заказов.</p>
+        </details>
+        <details>
+          <summary>Как проходит оплата?</summary>
+          <p>После приёмки уборки: картой, наличными или по СБП. Никаких предоплат. Для юрлиц — договор и счёт.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ФОРМА -->
+  <section class="section section--dark" id="lead">
+    <div class="container lead">
+      <div class="lead__text reveal">
+        <p class="eyebrow">Заказ уборки</p>
+        <h2>Оставьте заявку — подтвердим за&nbsp;15&nbsp;минут</h2>
+        <p>Напишите площадь и тип уборки — назовём точную цену и ближайшее свободное окно. Отменить или перенести можно бесплатно за 12 часов.</p>
+        <ul class="lead__contacts">
+          <li><a href="tel:+79990004455">+7 999 000-44-55</a></li>
+          <li><a href="#">WhatsApp</a> · <a href="#">Telegram</a></li>
+          <li>Ежедневно 8:00–22:00</li>
+        </ul>
+      </div>
+      <form class="form reveal" id="lead-form" novalidate>
+        <div class="form__field">
+          <label for="f-name">Имя</label>
+          <input type="text" id="f-name" name="name" placeholder="Как к вам обращаться" autocomplete="name" required>
+        </div>
+        <div class="form__field">
+          <label for="f-phone">Телефон</label>
+          <input type="tel" id="f-phone" name="phone" placeholder="+7 ___ ___-__-__" autocomplete="tel" required>
+        </div>
+        <div class="form__field">
+          <label for="f-msg">Площадь и тип уборки <span>— необязательно</span></label>
+          <textarea id="f-msg" name="message" rows="3" placeholder="Например: 55 м², генеральная, суббота"></textarea>
+        </div>
+        <label class="form__consent">
+          <input type="checkbox" name="consent" required>
+          <span>Согласен на обработку персональных данных</span>
+        </label>
+        <button type="submit" class="btn btn--block">Заказать уборку</button>
+        <p class="form__status" id="form-status" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>© 2026 Чисто.Дом — клининг квартир</p>
+    <p>ИП Петрова М. С. · ИНН 000000000000</p>
+    <p><a href="#">Политика обработки персональных данных</a></p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

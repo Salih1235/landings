@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ремонт квартир под ключ — бригада Дмитрия Северова</title>
+  <meta name="description" content="Ремонт квартир под ключ по фиксированной смете. Договор, поэтапная оплата, гарантия 12 месяцев. Бесплатный замер и смета за 1 день.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23E8641B'/><text x='50' y='68' font-size='52' text-anchor='middle' font-family='Arial' font-weight='bold' fill='white'>С</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#" class="logo">
+      <span class="logo__mark">С</span>
+      <span class="logo__text">Северов<em>ремонт</em></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#packages">Цены</a>
+      <a href="#calc">Калькулятор</a>
+      <a href="#cases">Работы</a>
+      <a href="#steps">Этапы</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <div class="header__actions">
+      <a href="tel:+79990001122" class="header__phone">+7 999 000-11-22</a>
+      <a href="#lead" class="btn btn--small">Вызвать замерщика</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ХИРО -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content reveal">
+        <p class="eyebrow">Бригада Дмитрия Северова · с 2016 года</p>
+        <h1>Ремонт квартир под&nbsp;ключ по&nbsp;смете, которая не&nbsp;вырастет</h1>
+        <p class="hero__sub">Фиксируем стоимость и сроки в договоре. Платите поэтапно — только за принятые работы. Замер и подробная смета — бесплатно, за один день.</p>
+        <div class="hero__cta">
+          <a href="#calc" class="btn">Рассчитать стоимость</a>
+          <a href="#cases" class="btn btn--ghost">Смотреть работы</a>
+        </div>
+      </div>
+      <div class="hero__stats reveal">
+        <div class="stat">
+          <span class="stat__num" data-count="214">214</span>
+          <span class="stat__label">квартир сдано</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count="9">9</span>
+          <span class="stat__label">лет на объектах</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">12&nbsp;мес</span>
+          <span class="stat__label">гарантия по договору</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">0&nbsp;₽</span>
+          <span class="stat__label">замер и смета</span>
+        </div>
+      </div>
+    </div>
+    <div class="tape" aria-hidden="true"></div>
+  </section>
+
+  <!-- ПАКЕТЫ -->
+  <section class="section" id="packages">
+    <div class="container">
+      <p class="eyebrow reveal">Цены за квадратный метр</p>
+      <h2 class="reveal">Три формата ремонта</h2>
+      <p class="section__sub reveal">Цена за м² — ориентир для планирования. Точную стоимость фиксируем в смете после бесплатного замера.</p>
+      <div class="cards">
+        <article class="card reveal">
+          <h3>Косметический</h3>
+          <p class="card__price"><b>от 6 900 ₽</b>/м²</p>
+          <ul>
+            <li>Стены: обои или покраска</li>
+            <li>Потолки: натяжные</li>
+            <li>Полы: ламинат или линолеум</li>
+            <li>Замена розеток и выключателей</li>
+            <li>Срок: от 3 недель</li>
+          </ul>
+          <a href="#lead" class="btn btn--ghost btn--block">Получить смету</a>
+        </article>
+        <article class="card card--featured reveal">
+          <p class="card__badge">Чаще всего выбирают</p>
+          <h3>Капитальный</h3>
+          <p class="card__price"><b>от 11 900 ₽</b>/м²</p>
+          <ul>
+            <li>Черновая подготовка: стяжка, штукатурка</li>
+            <li>Полная замена электрики и сантехники</li>
+            <li>Санузел под ключ с гидроизоляцией</li>
+            <li>Чистовая отделка всех помещений</li>
+            <li>Срок: от 6 недель</li>
+          </ul>
+          <a href="#lead" class="btn btn--block">Получить смету</a>
+        </article>
+        <article class="card reveal">
+          <h3>Дизайнерский</h3>
+          <p class="card__price"><b>от 15 900 ₽</b>/м²</p>
+          <ul>
+            <li>Работа по дизайн-проекту</li>
+            <li>Сложные потолки, скрытый свет</li>
+            <li>Укладка плитки любой сложности</li>
+            <li>Авторский надзор и фотоотчёты</li>
+            <li>Срок: от 8 недель</li>
+          </ul>
+          <a href="#lead" class="btn btn--ghost btn--block">Получить смету</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- КАЛЬКУЛЯТОР -->
+  <section class="section section--dark" id="calc">
+    <div class="container">
+      <p class="eyebrow eyebrow--light reveal">Предварительный расчёт</p>
+      <h2 class="reveal">Прикиньте бюджет за&nbsp;минуту</h2>
+      <div class="calc reveal">
+        <div class="calc__controls">
+          <div class="calc__field">
+            <label for="calc-area">Площадь квартиры</label>
+            <div class="calc__range-row">
+              <input type="range" id="calc-area" min="20" max="120" value="45" step="1">
+              <output for="calc-area" id="calc-area-out">45 м²</output>
+            </div>
+          </div>
+          <fieldset class="calc__field">
+            <legend>Тип ремонта</legend>
+            <div class="calc__radios" role="radiogroup">
+              <label class="chip"><input type="radio" name="calc-type" value="6900" checked><span>Косметический</span></label>
+              <label class="chip"><input type="radio" name="calc-type" value="11900"><span>Капитальный</span></label>
+              <label class="chip"><input type="radio" name="calc-type" value="15900"><span>Дизайнерский</span></label>
+            </div>
+          </fieldset>
+          <label class="calc__check">
+            <input type="checkbox" id="calc-bath">
+            <span>Санузел под ключ (+ от 120 000 ₽)</span>
+          </label>
+        </div>
+        <div class="calc__result">
+          <p class="calc__result-label">Ориентировочная стоимость работ</p>
+          <p class="calc__result-num" id="calc-total">310 000 – 345 000 ₽</p>
+          <p class="calc__result-note">Точная цифра — после бесплатного замера. Смета фиксируется в договоре и не меняется по ходу работ.</p>
+          <a href="#lead" class="btn" id="calc-cta">Получить точную смету</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- КЕЙСЫ -->
+  <section class="section" id="cases">
+    <div class="container">
+      <p class="eyebrow reveal">Сданные объекты</p>
+      <h2 class="reveal">Работы за последний год</h2>
+      <div class="cases">
+        <article class="case reveal">
+          <div class="case__photo case__photo--1"><span>фото объекта</span></div>
+          <div class="case__body">
+            <h3>Двушка в ЖК «Северный парк»</h3>
+            <p class="case__meta">54 м² · капитальный · 7 недель</p>
+            <p>Полная замена электрики, стяжка, санузел в плитке под камень. Уложились в смету 648 000 ₽.</p>
+          </div>
+        </article>
+        <article class="case reveal">
+          <div class="case__photo case__photo--2"><span>фото объекта</span></div>
+          <div class="case__body">
+            <h3>Студия для сдачи в аренду</h3>
+            <p class="case__meta">28 м² · косметический · 3 недели</p>
+            <p>Быстрый ремонт под аренду: моющаяся краска, ламинат 33 класса, новый фартук на кухне.</p>
+          </div>
+        </article>
+        <article class="case reveal">
+          <div class="case__photo case__photo--3"><span>фото объекта</span></div>
+          <div class="case__body">
+            <h3>Трёшка по дизайн-проекту</h3>
+            <p class="case__meta">82 м² · дизайнерский · 11 недель</p>
+            <p>Скрытые двери, трековый свет, микроцемент в санузле. Еженедельные фотоотчёты заказчику в Telegram.</p>
+          </div>
+        </article>
+        <article class="case reveal">
+          <div class="case__photo case__photo--4"><span>фото объекта</span></div>
+          <div class="case__body">
+            <h3>Вторичка после старых хозяев</h3>
+            <p class="case__meta">61 м² · капитальный · 8 недель</p>
+            <p>Демонтаж до бетона, новая проводка, выравнивание стен. Вывоз мусора включили в смету сразу.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ЭТАПЫ -->
+  <section class="section section--tint" id="steps">
+    <div class="container">
+      <p class="eyebrow reveal">Как строится работа</p>
+      <h2 class="reveal">От звонка до ключей — 5&nbsp;шагов</h2>
+      <ol class="steps">
+        <li class="step reveal">
+          <h3>Замер и смета</h3>
+          <p>Приезжаем в удобное время, обмеряем квартиру, на следующий день присылаем подробную смету. Бесплатно и ни к чему не обязывает.</p>
+        </li>
+        <li class="step reveal">
+          <h3>Договор</h3>
+          <p>Фиксируем в договоре стоимость, сроки и график платежей. Смета — приложение к договору, задним числом не меняется.</p>
+        </li>
+        <li class="step reveal">
+          <h3>Черновые работы</h3>
+          <p>Демонтаж, электрика, сантехника, стяжка, штукатурка. Присылаем фотоотчёты, скрытые работы принимаете до закрытия.</p>
+        </li>
+        <li class="step reveal">
+          <h3>Чистовая отделка</h3>
+          <p>Плитка, полы, потолки, обои или покраска, установка дверей и сантехники. Оплата — поэтапно, после приёмки каждого блока.</p>
+        </li>
+        <li class="step reveal">
+          <h3>Уборка и сдача</h3>
+          <p>Убираем за собой, вывозим мусор, вместе проходим по квартире с чек-листом. Выдаём гарантию 12 месяцев по договору.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ОТЗЫВЫ -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <p class="eyebrow reveal">Отзывы заказчиков</p>
+      <h2 class="reveal">Что говорят после сдачи</h2>
+      <div class="reviews">
+        <blockquote class="review reveal">
+          <p>«Больше всего боялась, что смета вырастет в процессе, — не выросла ни на рубль. Все допработы обсуждали до начала, а не по факту».</p>
+          <footer><b>Марина</b> · двушка 54 м², капитальный</footer>
+        </blockquote>
+        <blockquote class="review reveal">
+          <p>«Живу в другом городе, квартиру ремонтировал под аренду. Всё приняли по видеосвязи и фотоотчётам, ключи забрал у консьержа».</p>
+          <footer><b>Алексей</b> · студия 28 м², косметический</footer>
+        </blockquote>
+        <blockquote class="review reveal">
+          <p>«Дмитрий сам предложил, где можно сэкономить без потери качества, — минус 90 тысяч от первоначальной сметы. Такое редко встречается».</p>
+          <footer><b>Ирина и Павел</b> · трёшка 82 м², по дизайн-проекту</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--tint" id="faq">
+    <div class="container container--narrow">
+      <p class="eyebrow reveal">Частые вопросы</p>
+      <h2 class="reveal">Что обычно спрашивают</h2>
+      <div class="faq reveal">
+        <details>
+          <summary>Смета точно не вырастет по ходу работ?</summary>
+          <p>Стоимость работ из сметы зафиксирована договором и не меняется. Вырасти может только объём по вашей инициативе — например, если решите добавить тёплый пол. Любые допработы сначала согласовываем письменно, потом делаем.</p>
+        </details>
+        <details>
+          <summary>Кто покупает материалы?</summary>
+          <p>Черновые материалы обычно закупаем мы — по чекам, без наценки, вы видите каждую позицию. Чистовые (плитку, обои, ламинат) выбираете вы, мы подскажем расход и поможем не переплатить.</p>
+        </details>
+        <details>
+          <summary>Как проходит оплата?</summary>
+          <p>Никакой большой предоплаты. Работы разбиты на этапы: приняли этап — оплатили этап. График платежей прописан в договоре.</p>
+        </details>
+        <details>
+          <summary>Можно ли делать ремонт, не приезжая на объект?</summary>
+          <p>Да, четверть наших заказчиков — из других городов. Присылаем фотоотчёты 2–3 раза в неделю, скрытые работы показываем по видеосвязи, ключи принимаем по акту.</p>
+        </details>
+        <details>
+          <summary>Что входит в гарантию?</summary>
+          <p>12 месяцев на все выполненные работы по договору. Если что-то пошло не так — трещина по шву, отклеился уголок — приезжаем и устраняем бесплатно.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ФОРМА -->
+  <section class="section section--dark" id="lead">
+    <div class="container lead">
+      <div class="lead__text reveal">
+        <p class="eyebrow eyebrow--light">Бесплатный замер</p>
+        <h2>Начните со&nbsp;сметы — это ни&nbsp;к&nbsp;чему не&nbsp;обязывает</h2>
+        <p>Оставьте телефон — перезвоним в течение часа в рабочее время, договоримся о замере. На следующий день после замера у вас будет подробная смета с ценами за каждый вид работ.</p>
+        <ul class="lead__contacts">
+          <li><a href="tel:+79990001122">+7 999 000-11-22</a></li>
+          <li><a href="#">WhatsApp</a> · <a href="#">Telegram</a></li>
+          <li>Ежедневно с 9:00 до 20:00</li>
+        </ul>
+      </div>
+      <form class="form reveal" id="lead-form" novalidate>
+        <div class="form__field">
+          <label for="f-name">Как вас зовут</label>
+          <input type="text" id="f-name" name="name" placeholder="Имя" autocomplete="name" required>
+        </div>
+        <div class="form__field">
+          <label for="f-phone">Телефон</label>
+          <input type="tel" id="f-phone" name="phone" placeholder="+7 ___ ___-__-__" autocomplete="tel" required>
+        </div>
+        <div class="form__field">
+          <label for="f-msg">Пара слов о квартире <span>— необязательно</span></label>
+          <textarea id="f-msg" name="message" rows="3" placeholder="Площадь, тип ремонта, сроки…"></textarea>
+        </div>
+        <label class="form__consent">
+          <input type="checkbox" name="consent" required>
+          <span>Согласен на обработку персональных данных</span>
+        </label>
+        <button type="submit" class="btn btn--block">Получить бесплатную смету</button>
+        <p class="form__status" id="form-status" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>© 2026 Бригада Дмитрия Северова · Ремонт квартир под ключ</p>
+    <p>ИП Северов Д. А. · ИНН 000000000000</p>
+    <p><a href="#">Политика обработки персональных данных</a></p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

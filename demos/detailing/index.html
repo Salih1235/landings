@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ГРАФИТ — студия детейлинга: химчистка, полировка, керамика</title>
+  <meta name="description" content="Студия детейлинга ГРАФИТ: химчистка салона, полировка кузова, керамическая защита с гарантией 2 года. Фотоотчёт каждого этапа. Запись онлайн.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23121418'/><text x='50' y='70' font-size='56' text-anchor='middle' font-family='Arial' font-weight='bold' fill='%23E9A13B'>Г</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#" class="logo">ГРАФ<em>ИТ</em></a>
+    <nav class="nav" id="nav">
+      <a href="#works">До / после</a>
+      <a href="#services">Услуги и цены</a>
+      <a href="#steps">Как работаем</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <div class="header__actions">
+      <a href="tel:+79990002233" class="header__phone">+7 999 000-22-33</a>
+      <a href="#lead" class="btn btn--small">Записаться</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ХИРО -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__content reveal">
+        <p class="eyebrow">Студия детейлинга · работаем по записи</p>
+        <h1>Машину не&nbsp;узнать. В&nbsp;хорошем смысле</h1>
+        <p class="hero__sub">Химчистка салона, полировка кузова и керамическая защита. Принимаем по чек-листу, отдаём с фотоотчётом каждого этапа. На керамику — гарантия 2 года.</p>
+        <div class="hero__cta">
+          <a href="#lead" class="btn">Записаться на осмотр</a>
+          <a href="#works" class="btn btn--ghost">Смотреть до / после</a>
+        </div>
+      </div>
+      <div class="hero__stats reveal">
+        <div class="stat"><span class="stat__num">1 250+</span><span class="stat__label">автомобилей сделано</span></div>
+        <div class="stat"><span class="stat__num">6 лет</span><span class="stat__label">студии</span></div>
+        <div class="stat"><span class="stat__num">2 года</span><span class="stat__label">гарантия на керамику</span></div>
+        <div class="stat"><span class="stat__num">0 ₽</span><span class="stat__label">осмотр и расчёт</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ДО/ПОСЛЕ -->
+  <section class="section" id="works">
+    <div class="container">
+      <p class="eyebrow reveal">Результат, который видно</p>
+      <h2 class="reveal">До / после</h2>
+      <p class="section__sub reveal">Потяните ползунок. Слева — как машина приехала, справа — как уехала.</p>
+      <div class="ba reveal" id="ba">
+        <div class="ba__after" aria-hidden="true"><span class="ba__tag ba__tag--after">после</span></div>
+        <div class="ba__before" id="ba-before" aria-hidden="true"><span class="ba__tag">до</span></div>
+        <div class="ba__handle" id="ba-handle" aria-hidden="true"></div>
+        <input type="range" id="ba-range" min="0" max="100" value="50" aria-label="Сравнение до и после">
+      </div>
+      <p class="ba__caption reveal">Kia K5, 2021 — восстановительная полировка + керамика в два слоя. 2 дня в студии.</p>
+    </div>
+  </section>
+
+  <!-- УСЛУГИ -->
+  <section class="section section--tint" id="services">
+    <div class="container">
+      <p class="eyebrow reveal">Услуги и цены</p>
+      <h2 class="reveal">Что делаем</h2>
+      <div class="cards">
+        <article class="card reveal">
+          <h3>Химчистка салона</h3>
+          <p class="card__price"><b>от 7 900 ₽</b> · 1 день</p>
+          <ul>
+            <li>Полная разборка салона без «замывания»</li>
+            <li>Пар + профессиональная химия</li>
+            <li>Кожа: чистка и консервация</li>
+            <li>Сушка и сборка в тот же день</li>
+          </ul>
+          <a href="#lead" class="btn btn--ghost btn--block">Записаться</a>
+        </article>
+        <article class="card card--featured reveal">
+          <p class="card__badge">Хит студии</p>
+          <h3>Полировка кузова</h3>
+          <p class="card__price"><b>от 14 900 ₽</b> · 1–2 дня</p>
+          <ul>
+            <li>Мойка, глина, обезжиривание</li>
+            <li>Восстановительная полировка в 2–3 этапа</li>
+            <li>Убираем паутинку и голограммы</li>
+            <li>Защитный воск в подарок</li>
+          </ul>
+          <a href="#lead" class="btn btn--block">Записаться</a>
+        </article>
+        <article class="card reveal">
+          <h3>Керамическая защита</h3>
+          <p class="card__price"><b>от 27 900 ₽</b> · 2–3 дня</p>
+          <ul>
+            <li>Полный цикл полировки в составе</li>
+            <li>Керамика в 2–4 слоя</li>
+            <li>Гидрофоб: грязь не липнет, мойка реже</li>
+            <li>Гарантия 2 года с осмотрами</li>
+          </ul>
+          <a href="#lead" class="btn btn--ghost btn--block">Записаться</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ЭТАПЫ -->
+  <section class="section" id="steps">
+    <div class="container">
+      <p class="eyebrow reveal">Как работаем</p>
+      <h2 class="reveal">От приёмки до&nbsp;выдачи</h2>
+      <ol class="steps">
+        <li class="step reveal">
+          <h3>Осмотр и расчёт</h3>
+          <p>Приезжаете или присылаете фото. Осматриваем кузов с лампой, фиксируем состояние в чек-листе, называем точную цену до начала работ.</p>
+        </li>
+        <li class="step reveal">
+          <h3>Подготовка</h3>
+          <p>Двухфазная мойка, очистка глиной, обезжиривание. На этом этапе видно всё, что скрывала грязь, — согласуем финальный объём.</p>
+        </li>
+        <li class="step reveal">
+          <h3>Работы</h3>
+          <p>Полировка, химчистка или нанесение керамики в чистой зоне под лампами. Присылаем фото промежуточных этапов в мессенджер.</p>
+        </li>
+        <li class="step reveal">
+          <h3>Выдача</h3>
+          <p>Принимаете машину под теми же лампами, что и мы. Отдаём фотоотчёт и памятку по уходу, для керамики — гарантийный сертификат.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ОТЗЫВЫ -->
+  <section class="section section--tint" id="reviews">
+    <div class="container">
+      <p class="eyebrow reveal">Отзывы</p>
+      <h2 class="reveal">Что говорят владельцы</h2>
+      <div class="reviews">
+        <blockquote class="review reveal">
+          <p>«Черный кроссовер, весь в паутинке после моек. Забирал вечером — под лампами ни одной риски. Через месяц вода всё ещё скатывается шариками».</p>
+          <footer><b>Игорь</b> · BMW X3, полировка + керамика</footer>
+        </blockquote>
+        <blockquote class="review reveal">
+          <p>«После собаки и двоих детей салон казался безнадёжным. Вернули машину как из салона, запах ушёл полностью, а не замаскировался отдушкой».</p>
+          <footer><b>Наталья</b> · Skoda Kodiaq, химчистка</footer>
+        </blockquote>
+        <blockquote class="review reveal">
+          <p>«Понравилось, что до начала показали лампой все дефекты и честно сказали, что уберётся, а что останется. Результат — лучше обещанного».</p>
+          <footer><b>Дмитрий</b> · Toyota Camry, полировка</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container container--narrow">
+      <p class="eyebrow reveal">Частые вопросы</p>
+      <h2 class="reveal">Спрашивают перед записью</h2>
+      <div class="faq reveal">
+        <details>
+          <summary>Сколько держится керамика?</summary>
+          <p>При правильном уходе — 2–3 года. Даём гарантию 2 года: раз в полгода приезжаете на бесплатный осмотр и обновление гидрофобного слоя.</p>
+        </details>
+        <details>
+          <summary>Полировка не «сотрёт» лак?</summary>
+          <p>Перед работой замеряем толщину лака в контрольных точках. Если где-то лак тонкий — честно говорим и подбираем щадящий режим или отказываемся от участка.</p>
+        </details>
+        <details>
+          <summary>Можно ли сделать всё за один день?</summary>
+          <p>Химчистку — да, при записи на утро. Полировка и керамика требуют 1–3 дня: составам нужно время на кристаллизацию, торопить их нельзя.</p>
+        </details>
+        <details>
+          <summary>Нужна ли предоплата?</summary>
+          <p>Нет. Фиксируем цену после осмотра, оплата — при выдаче машины, наличными или картой. Для юрлиц работаем по счёту.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ФОРМА -->
+  <section class="section section--dark" id="lead">
+    <div class="container lead">
+      <div class="lead__text reveal">
+        <p class="eyebrow">Запись</p>
+        <h2>Запишитесь на&nbsp;бесплатный осмотр</h2>
+        <p>Оставьте телефон — перезвоним, подберём время и скажем точную стоимость по вашей машине. Осмотр ни к чему не обязывает.</p>
+        <ul class="lead__contacts">
+          <li><a href="tel:+79990002233">+7 999 000-22-33</a></li>
+          <li><a href="#">WhatsApp</a> · <a href="#">Telegram</a></li>
+          <li>Ежедневно 9:00–21:00 · ул. Промышленная, 14</li>
+        </ul>
+      </div>
+      <form class="form reveal" id="lead-form" novalidate>
+        <div class="form__field">
+          <label for="f-name">Имя</label>
+          <input type="text" id="f-name" name="name" placeholder="Как к вам обращаться" autocomplete="name" required>
+        </div>
+        <div class="form__field">
+          <label for="f-phone">Телефон</label>
+          <input type="tel" id="f-phone" name="phone" placeholder="+7 ___ ___-__-__" autocomplete="tel" required>
+        </div>
+        <div class="form__field">
+          <label for="f-msg">Марка авто и услуга <span>— необязательно</span></label>
+          <textarea id="f-msg" name="message" rows="3" placeholder="Например: Kia K5, полировка и керамика"></textarea>
+        </div>
+        <label class="form__consent">
+          <input type="checkbox" name="consent" required>
+          <span>Согласен на обработку персональных данных</span>
+        </label>
+        <button type="submit" class="btn btn--block">Записаться на осмотр</button>
+        <p class="form__status" id="form-status" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>© 2026 Студия детейлинга «Графит»</p>
+    <p>ИП Иванов А. А. · ИНН 000000000000</p>
+    <p><a href="#">Политика обработки персональных данных</a></p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
