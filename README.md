@@ -3,16 +3,16 @@
 Демонстрационные одностраничные сайты: вёрстка на чистом HTML, CSS и
 JavaScript, без конструкторов и сборщиков.
 
-**Портфолио:** https://salih1235.github.io/landings/portfolio/
+**Портфолио:** https://odnastranica.ru
 
 ## Работы
 
 | Проект | Особенности |
 |---|---|
-| [Ремонт квартир](https://salih1235.github.io/landings/demos/remont/) | калькулятор сметы, форма заявок |
-| [Студия детейлинга](https://salih1235.github.io/landings/demos/detailing/) | тёмная тема, слайдер «до / после» |
-| [Частный юрист](https://salih1235.github.io/landings/demos/lawyer/) | издательская вёрстка, блок результатов |
-| [Клининговая компания](https://salih1235.github.io/landings/demos/cleaning/) | табы услуг, калькулятор стоимости |
+| [Ремонт квартир](https://odnastranica.ru/demos/remont/) | калькулятор сметы, форма заявок |
+| [Студия детейлинга](https://odnastranica.ru/demos/detailing/) | тёмная тема, слайдер «до / после» |
+| [Частный юрист](https://odnastranica.ru/demos/lawyer/) | издательская вёрстка, блок результатов |
+| [Клининговая компания](https://odnastranica.ru/demos/cleaning/) | табы услуг, калькулятор стоимости |
 
 Все проекты адаптивны, работают без внешних зависимостей и загружаются
 меньше чем за секунду. Данные компаний в демо вымышленные.
