@@ -446,25 +446,16 @@ input[type="range"]::-moz-range-thumb {
 }
 .case__photo {
   aspect-ratio: 16 / 8;
-  display: grid;
-  place-items: center;
   position: relative;
+  background-color: var(--tint);
+  background-size: cover;
+  background-position: center;
 }
-.case__photo span {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: rgba(255, 255, 255, 0.85);
-  border: 1px dashed rgba(255, 255, 255, 0.5);
-  padding: 6px 14px;
-  border-radius: 99px;
-}
-/* плейсхолдеры фото — заменить на реальные снимки объектов */
-.case__photo--1 { background: linear-gradient(120deg, #7D8794, #4E5560); }
-.case__photo--2 { background: linear-gradient(120deg, #A08A72, #6E5D4B); }
-.case__photo--3 { background: linear-gradient(120deg, #8A9284, #565E52); }
-.case__photo--4 { background: linear-gradient(120deg, #948490, #5C5058); }
+/* На боевом проекте заменить на фото объектов клиента */
+.case__photo--1 { background-image: url("../img/case-1.jpg"); }
+.case__photo--2 { background-image: url("../img/case-2.jpg"); }
+.case__photo--3 { background-image: url("../img/case-3.jpg"); }
+.case__photo--4 { background-image: url("../img/case-4.jpg"); }
 .case__body { padding: 24px 26px 28px; }
 .case__meta {
   font-family: var(--font-mono);
