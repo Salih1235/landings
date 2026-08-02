@@ -10,6 +10,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+      m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=111244786', 'ym');
+    ym(111244786, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true, trackHash:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/111244786" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
 </head>
 <body>
 
@@ -188,9 +200,9 @@
       <h2>Обсудим ваш проект?</h2>
       <p class="contact__sub">Напишите пару слов о бизнесе — отвечу в течение пары часов, предложу структуру и точную цену.</p>
       <div class="contact__row">
-        <a href="https://t.me/jafarovsalih" class="btn">Написать в Telegram</a>
+        <a href="https://t.me/jafarovsalih" class="btn" data-goal="messenger">Написать в Telegram</a>
         <!-- ЗАМЕНИТЬ: ссылка на профиль Авито, когда появится объявление -->
-        <a href="#" class="btn btn--ghost">Профиль на Авито</a>
+        <a href="#" class="btn btn--ghost" data-goal="avito">Профиль на Авито</a>
       </div>
     </div>
   </section>
@@ -204,5 +216,13 @@
   </div>
 </footer>
 
+<script>
+  /* Цели Метрики: клики по контактам */
+  document.querySelectorAll("[data-goal]").forEach((el) => {
+    el.addEventListener("click", () => {
+      if (typeof ym === "function") ym(111244786, "reachGoal", el.dataset.goal);
+    });
+  });
+</script>
 </body>
 </html>
