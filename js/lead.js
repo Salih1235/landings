@@ -9,7 +9,7 @@
    Ниже — адрес развёрнутого воркера. Пока пусто, форма не делает
    вид, что отправила заявку, а отправляет человека в Telegram.
    ============================================================ */
-const LEAD_ENDPOINT = "";
+const LEAD_ENDPOINT = "https://lead-proxy.odnastranica.workers.dev";
 
 const METRIKA_ID = 111244786;
 const TELEGRAM_URL = "https://t.me/jafarovsalih";

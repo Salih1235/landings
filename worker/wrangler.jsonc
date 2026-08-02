@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "lead-proxy",
+  "main": "lead-proxy.js",
+  "compatibility_date": "2026-08-01",
+  "observability": {
+    "enabled": true
+  }
+  // Токен бота и chat_id сюда НЕ пишутся. Они задаются секретами:
+  //   npx wrangler secret put TG_TOKEN
+  //   npx wrangler secret put TG_CHAT
+  // Значение утилита спросит интерактивно и в файлы не сохранит.
+}
