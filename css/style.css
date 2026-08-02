@@ -329,6 +329,16 @@ h3 { font-size: 1.15rem; font-weight: 700; }
 .form__status.is-ok { color: #7BC47F; }
 .form__status.is-err { color: #F0A0A0; }
 
+/* поле-ловушка для ботов: скрыто от людей, но не через display:none —
+   иначе автозаполнялки его игнорируют */
+.form__hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 /* ---------- футер ---------- */
 .footer { background: var(--dark); color: var(--on-dark-soft); border-top: 1px solid #262C36; padding-block: 28px; font-size: 0.85rem; }
 .footer__inner { display: flex; flex-wrap: wrap; gap: 8px 32px; justify-content: space-between; }

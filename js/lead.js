@@ -1,20 +1,15 @@
 /* ============================================================
-   ЗАЯВКИ С ФОРМЫ → TELEGRAM
+   ЗАЯВКИ С ФОРМЫ
 
-   Как заполнить (подробно — в docs/telegram-bot.md):
-   1. В Telegram написать @BotFather → /newbot → получить токен
-   2. Написать своему боту любое сообщение
-   3. Открыть https://api.telegram.org/bot<ТОКЕН>/getUpdates
-      и найти "chat":{"id":ЧИСЛО} — это chatId
-   4. Вписать оба значения ниже и запушить
+   Форма отправляет данные не в Telegram напрямую, а на прослойку
+   Cloudflare Worker — там лежит токен бота, и в код страницы он
+   не попадает. Код прослойки: worker/lead-proxy.js
+   Развёртывание: docs/cloudflare-worker.md
 
-   Пока значения пустые, форма НЕ делает вид, что отправила заявку,
-   а честно предлагает написать напрямую — чтобы не потерять клиента.
+   Ниже — адрес развёрнутого воркера. Пока пусто, форма не делает
+   вид, что отправила заявку, а отправляет человека в Telegram.
    ============================================================ */
-const TG_CONFIG = {
-  botToken: "",
-  chatId: "",
-};
+const LEAD_ENDPOINT = "";
 
 const METRIKA_ID = 111244786;
 const TELEGRAM_URL = "https://t.me/jafarovsalih";
@@ -33,6 +28,11 @@ const statusEl = document.getElementById("form-status");
 function setStatus(text, kind) {
   statusEl.textContent = text;
   statusEl.className = "form__status" + (kind ? " is-" + kind : "");
+}
+
+function fallbackToTelegram(text) {
+  setStatus(text, "err");
+  window.open(TELEGRAM_URL, "_blank", "noopener");
 }
 
 form.addEventListener("submit", async (e) => {
@@ -60,17 +60,8 @@ form.addEventListener("submit", async (e) => {
     return;
   }
 
-  const text = [
-    "🔔 Заявка с odnastranica.ru",
-    `Имя: ${name}`,
-    `Контакт: ${contact}`,
-    form.message.value.trim() ? `О бизнесе: ${form.message.value.trim()}` : null,
-  ].filter(Boolean).join("\n");
-
-  // Бот ещё не настроен — не притворяемся, что отправили
-  if (!TG_CONFIG.botToken || !TG_CONFIG.chatId) {
-    setStatus("Форма пока не подключена. Напишите, пожалуйста, в Telegram — отвечу сразу.", "err");
-    window.open(TELEGRAM_URL, "_blank", "noopener");
+  if (!LEAD_ENDPOINT) {
+    fallbackToTelegram("Форма пока не подключена. Напишите, пожалуйста, в Telegram — отвечу сразу.");
     return;
   }
 
@@ -80,19 +71,24 @@ form.addEventListener("submit", async (e) => {
   btn.textContent = "Отправляем…";
 
   try {
-    const res = await fetch(`https://api.telegram.org/bot${TG_CONFIG.botToken}/sendMessage`, {
+    const res = await fetch(LEAD_ENDPOINT, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ chat_id: TG_CONFIG.chatId, text }),
+      body: JSON.stringify({
+        name,
+        contact,
+        message: form.message.value.trim(),
+        company: form.company.value, // ловушка для ботов, человек её не видит
+      }),
     });
-    if (!res.ok) throw new Error("telegram " + res.status);
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok || !data.ok) throw new Error(data.error || res.status);
 
     form.reset();
     setStatus("Заявка отправлена! Отвечу в течение пары часов.", "ok");
     if (typeof ym === "function") ym(METRIKA_ID, "reachGoal", "lead");
   } catch {
-    setStatus("Не получилось отправить. Напишите в Telegram — отвечу сразу.", "err");
-    window.open(TELEGRAM_URL, "_blank", "noopener");
+    fallbackToTelegram("Не получилось отправить. Напишите в Telegram — отвечу сразу.");
   } finally {
     btn.disabled = false;
     btn.textContent = label;
