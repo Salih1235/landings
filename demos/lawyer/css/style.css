@@ -169,11 +169,17 @@ h3 { font-size: 1.25rem; }
 .practice__item {
   background: var(--surface);
   border: 1px solid var(--line);
-  border-top: 3px solid var(--brass);
   border-radius: var(--radius);
   padding: 28px 26px;
 }
-.practice__item h3 { margin-bottom: 10px; }
+/* латунная засечка у заголовка вместо полосы по краю карточки:
+   тонкая линия не спорит со скруглением и читается как книжная маргиналия */
+.practice__item h3 {
+  margin-bottom: 10px;
+  padding-top: 14px;
+  border-top: 2px solid var(--brass);
+  display: inline-block;
+}
 .practice__item p { font-size: 0.95rem; color: var(--ink-soft); }
 
 /* ---------- результаты ---------- */
