@@ -195,15 +195,38 @@
 
   <!-- КОНТАКТ -->
   <section class="section section--dark" id="contact">
-    <div class="container contact">
-      <p class="eyebrow">Контакты</p>
-      <h2>Обсудим ваш проект?</h2>
-      <p class="contact__sub">Напишите пару слов о бизнесе — отвечу в течение пары часов, предложу структуру и точную цену.</p>
-      <div class="contact__row">
-        <a href="https://t.me/jafarovsalih" class="btn" data-goal="messenger">Написать в Telegram</a>
-        <!-- ЗАМЕНИТЬ: ссылка на профиль Авито, когда появится объявление -->
-        <a href="#" class="btn btn--ghost" data-goal="avito">Профиль на Авито</a>
+    <div class="container lead">
+      <div class="lead__text">
+        <p class="eyebrow">Контакты</p>
+        <h2>Обсудим ваш проект?</h2>
+        <p>Напишите пару слов о бизнесе — отвечу в течение пары часов, предложу структуру сайта под вашу нишу и назову точную цену. Это бесплатно и ни к чему не обязывает.</p>
+        <div class="contact__row">
+          <a href="https://t.me/jafarovsalih" class="btn btn--ghost" data-goal="messenger">Написать в Telegram</a>
+          <!-- ЗАМЕНИТЬ: ссылка на профиль Авито, когда появится объявление -->
+          <a href="#" class="btn btn--ghost" data-goal="avito">Профиль на Авито</a>
+        </div>
       </div>
+
+      <form class="form" id="lead-form" novalidate>
+        <div class="form__field">
+          <label for="f-name">Как вас зовут</label>
+          <input type="text" id="f-name" name="name" placeholder="Имя" autocomplete="name" required>
+        </div>
+        <div class="form__field">
+          <label for="f-contact">Телефон или ник в Telegram</label>
+          <input type="text" id="f-contact" name="contact" placeholder="+7 ___ ___-__-__ или @nickname" required>
+        </div>
+        <div class="form__field">
+          <label for="f-msg">Чем занимаетесь <span>— пара слов</span></label>
+          <textarea id="f-msg" name="message" rows="3" placeholder="Например: ремонт квартир в Москве, нужен сайт с калькулятором"></textarea>
+        </div>
+        <label class="form__consent">
+          <input type="checkbox" name="consent" required>
+          <span>Согласен на обработку персональных данных</span>
+        </label>
+        <button type="submit" class="btn btn--block">Отправить заявку</button>
+        <p class="form__status" id="form-status" role="status"></p>
+      </form>
     </div>
   </section>
 
@@ -216,13 +239,6 @@
   </div>
 </footer>
 
-<script>
-  /* Цели Метрики: клики по контактам */
-  document.querySelectorAll("[data-goal]").forEach((el) => {
-    el.addEventListener("click", () => {
-      if (typeof ym === "function") ym(111244786, "reachGoal", el.dataset.goal);
-    });
-  });
-</script>
+<script src="js/lead.js"></script>
 </body>
 </html>
