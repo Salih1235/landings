@@ -14,6 +14,9 @@ Mark). Найдены через агрегатор Openverse.
 | `detailing/img/work-2.jpg` | CC0 | StockSnap — Auto Headlight |
 | `detailing/img/work-3.jpg` | CC0 | Flickr — green sports car |
 | `detailing/img/work-4.jpg` | CC0 | StockSnap — Wheels Rims |
+| `evakuator/img/unit-1.jpg` | CC0 | Wikimedia — MAN TGL tow truck, Moscow |
+| `evakuator/img/unit-2.jpg` | CC0 | Wikimedia — Liebherr crane truck, Toronto |
+| `evakuator/img/unit-3.jpg` | CC0 | Wikimedia — Case backhoe loader, Arlington |
 
 ## Важно для клиентских проектов
 

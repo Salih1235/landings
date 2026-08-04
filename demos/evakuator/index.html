@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ТЯГА24 — эвакуатор с манипулятором и экскаватор-погрузчик</title>
+  <meta name="description" content="Эвакуатор с манипулятором, перевозка спецтехники, аренда экскаватора-погрузчика. Подача от 25 минут, круглосуточно. Расчёт стоимости на сайте.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='14' fill='%23FFC400'/><text x='50' y='72' font-size='60' text-anchor='middle' font-family='Arial' font-weight='bold' fill='%2314181C'>Т</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- ЗАМЕНИТЬ: счётчик Яндекс.Метрики КЛИЕНТА.
+       Взять готовый код в интерфейсе Метрики и вставить сюда целиком.
+       Инструкция: docs/metrika-setup.md. Свой счётчик сюда не ставить! -->
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#" class="logo">
+      <span class="logo__mark">Т</span>
+      <span class="logo__text">ТЯГА<em>24</em></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#services">Услуги</a>
+      <a href="#calc">Расчёт</a>
+      <a href="#fleet">Техника</a>
+      <a href="#zones">Выезд</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <div class="header__actions">
+      <a href="#lead" class="header__phone">Телефон диспетчера</a>
+      <a href="#lead" class="btn btn--small">Вызвать</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="alert">
+  <div class="container alert__inner">
+    <span><b>Диспетчер на линии круглосуточно</b></span>
+    <span>Подача по городу — от 25 минут</span>
+    <span>Оплата после погрузки</span>
+  </div>
+</div>
+
+<main>
+
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <p class="eyebrow">Эвакуатор · манипулятор · экскаватор-погрузчик</p>
+        <h1>Машина не едет.<br>Приедем мы</h1>
+        <p class="hero__sub">Эвакуируем легковые и внедорожники, перевозим спецтехнику манипулятором, сдаём экскаватор-погрузчик на смену. Работаем без выходных и ночью.</p>
+        <a href="#lead" class="hero__phone">
+          <b>Позвонить диспетчеру</b>
+          <span>ответим за три гудка</span>
+        </a>
+        <div class="hero__cta">
+          <a href="#calc" class="btn">Рассчитать стоимость</a>
+          <a href="#fleet" class="btn btn--ghost">Посмотреть технику</a>
+        </div>
+      </div>
+      <ul class="hero__stats">
+        <li><b class="stat__num">25 мин</b><span class="stat__label">средняя подача по городу</span></li>
+        <li><b class="stat__num">24/7</b><span class="stat__label">включая ночь и праздники</span></li>
+        <li><b class="stat__num">3 т</b><span class="stat__label">грузоподъёмность манипулятора</span></li>
+        <li><b class="stat__num">6 лет</b><span class="stat__label">на линии, без страховых случаев</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="tape" aria-hidden="true"></div>
+
+  <!-- УСЛУГИ И ЦЕНЫ -->
+  <section class="section" id="services">
+    <div class="container">
+      <p class="eyebrow">Что делаем</p>
+      <h2>Услуги и цены</h2>
+      <p class="section__sub">Цена складывается из подачи и километража за городом. Диспетчер называет сумму по телефону — на месте она не меняется.</p>
+
+      <div class="price-list">
+        <article class="price-row reveal">
+          <div>
+            <h3>Эвакуация легкового автомобиля</h3>
+            <p>Погрузка на платформу, крепление такелажными ремнями. Машина едет колёсами вверх, подвеска не нагружена.</p>
+          </div>
+          <b>от 2 500 ₽ <span>/ по городу</span></b>
+        </article>
+        <article class="price-row reveal">
+          <div>
+            <h3>Внедорожник, микроавтобус, газель</h3>
+            <p>Платформа 6,2 метра и лебёдка на 5 тонн. Заберём и с подземного паркинга, если высота въезда от двух метров.</p>
+          </div>
+          <b>от 3 500 ₽ <span>/ по городу</span></b>
+        </article>
+        <article class="price-row reveal">
+          <div>
+            <h3>Перевозка спецтехники манипулятором</h3>
+            <p>Мини-погрузчики, генераторы, бытовки, поддоны с материалом. Стрела на 3 тонны, вылет 8 метров.</p>
+          </div>
+          <b>от 4 500 ₽ <span>/ первые два часа</span></b>
+        </article>
+        <article class="price-row reveal">
+          <div>
+            <h3>Аренда экскаватора-погрузчика</h3>
+            <p>Копка траншей, планировка участка, погрузка грунта. Работаем сменами, оператор входит в стоимость.</p>
+          </div>
+          <b>от 12 000 ₽ <span>/ смена 8 часов</span></b>
+        </article>
+        <article class="price-row reveal">
+          <div>
+            <h3>Выезд за город</h3>
+            <p>Считается от поста ГАИ в обе стороны. Точную сумму диспетчер называет до выезда машины.</p>
+          </div>
+          <b>45 ₽ <span>/ километр</span></b>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- КАЛЬКУЛЯТОР -->
+  <section class="section section--dark" id="calc">
+    <div class="container">
+      <p class="eyebrow eyebrow--light">Расчёт без звонка</p>
+      <h2>Сколько будет стоить</h2>
+
+      <div class="calc reveal">
+        <div class="calc__controls">
+          <fieldset class="calc__field">
+            <label for="calc-km">Расстояние за городом</label>
+            <div class="calc__range-row">
+              <input type="range" id="calc-km" min="0" max="150" value="0" step="5">
+              <output for="calc-km" id="calc-km-out">0 км</output>
+            </div>
+          </fieldset>
+
+          <fieldset class="calc__field">
+            <legend>Что перевозим</legend>
+            <div class="calc__radios">
+              <label class="chip"><input type="radio" name="kind" value="2500" checked><span>Легковая</span></label>
+              <label class="chip"><input type="radio" name="kind" value="3500"><span>Внедорожник</span></label>
+              <label class="chip"><input type="radio" name="kind" value="4500"><span>Спецтехника</span></label>
+            </div>
+          </fieldset>
+
+          <label class="calc__check">
+            <input type="checkbox" id="calc-night">
+            <span>Ночной вызов, с 22:00 до 6:00 — плюс 700 ₽</span>
+          </label>
+          <label class="calc__check">
+            <input type="checkbox" id="calc-park">
+            <span>Из подземного паркинга или закрытого двора — плюс 1 000 ₽</span>
+          </label>
+        </div>
+
+        <div class="calc__result">
+          <p class="calc__result-label">Стоимость выезда</p>
+          <p class="calc__result-num" id="calc-total">2 500 ₽</p>
+          <p class="calc__result-note">Диспетчер подтвердит сумму до выезда, и на месте она не изменится. Оплата после погрузки: наличными, картой или переводом.</p>
+          <a href="#lead" class="btn" id="calc-cta">Вызвать по этой цене</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПАРК ТЕХНИКИ -->
+  <section class="section" id="fleet">
+    <div class="container">
+      <p class="eyebrow">Свой парк</p>
+      <h2>На чём работаем</h2>
+      <p class="section__sub">Техника своя, не в субподряде. Поэтому диспетчер точно знает, где машина, и не переносит подачу.</p>
+
+      <div class="fleet">
+        <article class="unit reveal">
+          <div class="unit__photo unit__photo--1" role="img" aria-label="Эвакуатор с платформой"></div>
+          <div class="unit__body">
+            <h3>Эвакуатор с платформой</h3>
+            <p class="unit__tag">Легковые и кроссоверы</p>
+            <dl class="spec">
+              <div><dt>Длина платформы</dt><dd>6,2 м</dd></div>
+              <div><dt>Лебёдка</dt><dd>5 т</dd></div>
+              <div><dt>Высота въезда</dt><dd>от 2,0 м</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="unit reveal">
+          <div class="unit__photo unit__photo--2" role="img" aria-label="Манипулятор со стрелой"></div>
+          <div class="unit__body">
+            <h3>Манипулятор со стрелой</h3>
+            <p class="unit__tag">Спецтехника и грузы</p>
+            <dl class="spec">
+              <div><dt>Грузоподъёмность</dt><dd>3 т</dd></div>
+              <div><dt>Вылет стрелы</dt><dd>8 м</dd></div>
+              <div><dt>Кузов</dt><dd>5,0 × 2,2 м</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="unit reveal">
+          <div class="unit__photo unit__photo--3" role="img" aria-label="Экскаватор-погрузчик"></div>
+          <div class="unit__body">
+            <h3>Экскаватор-погрузчик</h3>
+            <p class="unit__tag">Земляные работы</p>
+            <dl class="spec">
+              <div><dt>Глубина копания</dt><dd>4,5 м</dd></div>
+              <div><dt>Объём ковша</dt><dd>0,3 / 1,0 м³</dd></div>
+              <div><dt>Смена</dt><dd>8 часов</dd></div>
+            </dl>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ЗОНЫ ВЫЕЗДА -->
+  <section class="section section--dark" id="zones">
+    <div class="container">
+      <p class="eyebrow eyebrow--light">География</p>
+      <h2>Куда и как быстро приезжаем</h2>
+      <p class="section__sub" style="color:var(--on-dark-soft)">Время подачи — среднее за последний месяц по журналу диспетчера, а не обещание из рекламы.</p>
+      <div class="zones">
+        <div class="zone reveal"><b>25 мин</b><span>Центр и прилегающие районы</span></div>
+        <div class="zone reveal"><b>40 мин</b><span>Спальные районы и промзоны</span></div>
+        <div class="zone reveal"><b>60 мин</b><span>Пригород до 30 километров</span></div>
+        <div class="zone reveal"><b>по факту</b><span>Трасса — считаем километраж</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- КАК РАБОТАЕМ -->
+  <section class="section section--tint" id="steps">
+    <div class="container container--narrow">
+      <p class="eyebrow">Порядок</p>
+      <h2>Как проходит вызов</h2>
+      <ol class="steps">
+        <li class="step reveal">
+          <h3>Звоните диспетчеру</h3>
+          <p>Спросим марку, где стоит машина и что с ней: заблокирован руль, спущены колёса, стоит в паркинге. От этого зависит, какую машину отправим.</p>
+        </li>
+        <li class="step reveal">
+          <h3>Называем цену и время</h3>
+          <p>Сумма фиксируется в этот момент. Если водитель опоздает больше чем на пятнадцать минут, вычтем 500 ₽ из счёта.</p>
+        </li>
+        <li class="step reveal">
+          <h3>Грузим и везём</h3>
+          <p>Фотографируем машину до погрузки и после разгрузки, снимки отправляем вам. Крепим ремнями, а не цепями: на дисках и порогах следов не остаётся.</p>
+        </li>
+        <li class="step reveal">
+          <h3>Оплата на месте</h3>
+          <p>Наличными, картой или переводом — после того как машина уже на земле. Даём чек, юридическим лицам оформляем документы.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ОТЗЫВЫ -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <p class="eyebrow">Отзывы</p>
+      <h2>Что пишут после вызова</h2>
+      <div class="reviews">
+        <figure class="review reveal">
+          <p>Заглох на трассе в двенадцатом часу ночи. До других контор дозванивался с третьего раза, тут ответили сразу и приехали за сорок минут. Цену назвали по телефону, столько и заплатил.</p>
+          <footer>Сергей, Toyota Camry</footer>
+        </figure>
+        <figure class="review reveal">
+          <p>Возили мини-погрузчик между объектами четыре раза. Ни разу не сорвали время, водитель сам крепит и сам всё проверяет. Для стройки это важнее цены.</p>
+          <footer>Артём, прораб</footer>
+        </figure>
+        <figure class="review reveal">
+          <p>Машина стояла в подземном паркинге с заблокированным рулём. Другие отказывались, эти приехали с подкатными тележками и вытащили без единой царапины.</p>
+          <footer>Ирина, BMW X3</footer>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--tint" id="faq">
+    <div class="container container--narrow">
+      <p class="eyebrow">Частые вопросы</p>
+      <h2>Спрашивают перед вызовом</h2>
+      <div class="faq">
+        <details>
+          <summary>Машина заблокирована — руль или коробка. Заберёте?</summary>
+          <p>Да. Для этого возим подкатные тележки: они подставляются под заблокированные колёса, и машина закатывается на платформу. Доплаты за это нет.</p>
+        </details>
+        <details>
+          <summary>Можно ехать вместе с машиной?</summary>
+          <p>Да, в кабине есть место для одного пассажира. Ребёнка младше семи лет взять не сможем — нет детского кресла.</p>
+        </details>
+        <details>
+          <summary>Что если машина после ДТП и не катится?</summary>
+          <p>Лебёдка на 5 тонн затянет её на платформу даже с заклиненными колёсами. Скажите об этом сразу: отправим эвакуатор с ломаной платформой, у него угол погрузки меньше.</p>
+        </details>
+        <details>
+          <summary>Оплата только наличными?</summary>
+          <p>Нет: карта, перевод по номеру или наличные — как удобно. Юридическим лицам выставляем счёт и закрываем актом, работаем по договору.</p>
+        </details>
+        <details>
+          <summary>Отвечаете за повреждения при погрузке?</summary>
+          <p>Да, ответственность застрахована. Перед погрузкой снимаем машину со всех сторон — это защищает и вас, и нас от споров о том, откуда взялась царапина.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ЗАЯВКА -->
+  <section class="section section--dark" id="lead">
+    <div class="container lead">
+      <div class="lead__text">
+        <p class="eyebrow eyebrow--light">Вызов</p>
+        <h2>Опишите ситуацию — перезвоним</h2>
+        <p>Если случай срочный, лучше позвонить: диспетчер на линии круглосуточно. Форма — для плановой перевозки техники и аренды экскаватора.</p>
+        <div class="lead__contacts">
+          <a href="#">Телефон диспетчера</a>
+          <a href="#">WhatsApp</a> · <a href="#">Telegram</a>
+          <p style="font-family:var(--font-mono);font-size:0.85rem;color:var(--on-dark-soft)">Круглосуточно, без выходных</p>
+        </div>
+      </div>
+
+      <form class="form reveal" id="lead-form" novalidate>
+        <div class="form__field">
+          <label for="f-name">Как к вам обращаться</label>
+          <input type="text" id="f-name" name="name" placeholder="Имя" autocomplete="name" required>
+        </div>
+        <div class="form__field">
+          <label for="f-phone">Телефон</label>
+          <input type="tel" id="f-phone" name="phone" placeholder="+7 ___ ___-__-__" autocomplete="tel" required>
+        </div>
+        <div class="form__field">
+          <label for="f-msg">Что перевезти <span>— необязательно</span></label>
+          <textarea id="f-msg" name="message" rows="3" placeholder="Например: мини-погрузчик с Ленина на Заводскую, завтра утром"></textarea>
+        </div>
+        <label class="form__consent">
+          <input type="checkbox" id="f-consent" required>
+          <span>Согласен на обработку персональных данных</span>
+        </label>
+        <button type="submit" class="btn btn--block">Оставить заявку</button>
+        <p class="form__status" id="form-status" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>ТЯГА24 · эвакуатор, манипулятор, экскаватор-погрузчик</p>
+    <p>Демонстрационный сайт. Компания вымышлена</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
